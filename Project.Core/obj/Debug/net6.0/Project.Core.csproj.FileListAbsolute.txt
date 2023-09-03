@@ -1,0 +1,15 @@
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/bin/Debug/net6.0/Project.Core.deps.json
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/bin/Debug/net6.0/Project.Core.dll
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/bin/Debug/net6.0/ref/Project.Core.dll
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/bin/Debug/net6.0/Project.Core.pdb
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/bin/Debug/net6.0/Project.Datalayer.dll
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/bin/Debug/net6.0/Project.Datalayer.pdb
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/obj/Debug/net6.0/Project.Core.csproj.AssemblyReference.cache
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/obj/Debug/net6.0/Project.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/obj/Debug/net6.0/Project.Core.AssemblyInfoInputs.cache
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/obj/Debug/net6.0/Project.Core.AssemblyInfo.cs
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/obj/Debug/net6.0/Project.Core.csproj.CoreCompileInputs.cache
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/obj/Debug/net6.0/Project.Core.csproj.CopyComplete
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/obj/Debug/net6.0/Project.Core.dll
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/obj/Debug/net6.0/ref/Project.Core.dll
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Core/obj/Debug/net6.0/Project.Core.pdb

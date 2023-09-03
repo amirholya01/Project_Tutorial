@@ -1,0 +1,14 @@
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/bin/Debug/net6.0/Project.Datalayer.deps.json
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/bin/Debug/net6.0/Project.Datalayer.runtimeconfig.json
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/bin/Debug/net6.0/Project.Datalayer.dll
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/bin/Debug/net6.0/ref/Project.Datalayer.dll
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/bin/Debug/net6.0/Project.Datalayer.pdb
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/obj/Debug/net6.0/Project.Datalayer.csproj.AssemblyReference.cache
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/obj/Debug/net6.0/Project.Datalayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/obj/Debug/net6.0/Project.Datalayer.AssemblyInfoInputs.cache
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/obj/Debug/net6.0/Project.Datalayer.AssemblyInfo.cs
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/obj/Debug/net6.0/Project.Datalayer.csproj.CoreCompileInputs.cache
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/obj/Debug/net6.0/Project.Datalayer.dll
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/obj/Debug/net6.0/ref/Project.Datalayer.dll
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/obj/Debug/net6.0/Project.Datalayer.pdb
+/Users/amirhosseinolya/Desktop/rider/Project/Project.Datalayer/obj/Debug/net6.0/Project.Datalayer.genruntimeconfig.cache
