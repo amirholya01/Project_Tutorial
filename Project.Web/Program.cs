@@ -12,6 +12,7 @@ builder.Services.AddDbContext<ProjectContext>(options =>
 });
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IPermissionService, PermissionService>();
 var app = builder.Build();
 app.UseStaticFiles();
 app.MapDefaultControllerRoute();

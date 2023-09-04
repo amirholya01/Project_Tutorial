@@ -1,4 +1,6 @@
 using Project.Core.DTOs;
+using Project.Core.Generator;
+using Project.Core.Security;
 using Project.Core.Services.Interfaces;
 using Project.Datalayer.Context;
 using Project.Datalayer.Entities.User;
@@ -46,7 +48,19 @@ public class UserService : IUserService
         UserForAdminViewModel list = new UserForAdminViewModel();
         list.CurrentPage = pageId;
         list.PageCount = result.Count() / take;
-        list.Users = result.OrderBy(u => u.RegisterDate).Skip(skip).Take(take).ToList();
+        list.Users = _context.Users.OrderBy(u => u.RegisterDate).Skip(skip).Take(take).ToList();
         return list;
+    }
+
+    public int AddUserFromAdmin(CreateUserViewModel user)
+    {
+        User addUser = new User();
+        addUser.Password = PasswordHelper.EncodePassword(user.Password);
+        addUser.ActiveCode = StringGenerator.CodeGenerator();
+        addUser.Email = user.Email;
+        addUser.IsActive = true;
+        addUser.RegisterDate = DateTime.Now;
+        addUser.Username = user.Username;
+        return AddUser(addUser);
     }
 }

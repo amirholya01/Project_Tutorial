@@ -12,6 +12,7 @@ public interface IUserService
     #region Admin panel
 
     UserForAdminViewModel GetUsers(int pageId = 1, string filterEmail = "", string filterUsername = "");
+    int AddUserFromAdmin(CreateUserViewModel user);
 
     #endregion
 }

@@ -1,0 +1,59 @@
+@page
+@using Project.Datalayer.Entities.User
+@model Project.Web.Pages.Admin.Users.CreateUser
+
+@{
+    Layout = "Shared/_AdminLayout";
+}
+
+@{
+    ViewData["Title"] = "create-user";
+    List<Role> Roles = ViewData["Roles"] as List<Role>;
+}
+
+<div class="row" >
+    <form method="post" enctype="multipart/form-data" >
+        <div class="col col-md-8" style="border: 3px solid #555555;border-radius: 15px; margin: 15px;">
+           
+               
+                    <div class="input-group">
+    
+                        <div class="container mt-3">
+                            <h2>Add new user</h2>
+                        
+                            <div class="mb-3 mt-3">
+    
+                                <input type="text" class="form-control" asp-for="CreateUserViewModel.Username" placeholder="Enter username" name="username">
+                            </div>
+                            <div class="mb-3">
+    
+                                <input type="email" class="form-control" asp-for="CreateUserViewModel.Email" placeholder="Enter email" name="email">
+                            </div>
+                           
+                            <div class="mb-3">
+    
+                                <input type="text" class="form-control" asp-for="CreateUserViewModel.Password" placeholder="Enter password" name="password">
+                            </div>
+                           
+                            <div class="col col-md-3">
+                              @foreach(var items in Roles) 
+                              {
+                                  <div class="form-check">
+                                    <input class="form-check-input" name="SelectedRoles" type="checkbox" value="@items.RoleId" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      @items.RoleTitle
+                                    </label>
+                                  </div>
+                              }
+                                
+                              
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="margin: 6px;">Add</button>
+                     
+                        </div>
+                    </div>
+            </div>
+    </form>
+
+</div>
+
