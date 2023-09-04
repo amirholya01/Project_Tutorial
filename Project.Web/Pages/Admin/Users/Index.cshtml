@@ -13,11 +13,18 @@
   <div class="container mt-5">
     <form class="mb-3">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search...">
-        <button type="submit" class="btn btn-primary">Search</button>
+        <input type="text" name="filterUsername" class="form-control" placeholder="Username...">
+        <input type="text" name="filterEmail" class="form-control" placeholder="Email...">
+        <button type="submit" class="btn btn-primary btn-sm">Search</button>
+        <a href="/Admin/Users" class="btn btn-info btn-sm">Clear</a>
       </div>
     </form>
-  </div>           
+  </div>        
+  <div class="row" style="margin-left: 5px;">
+    <div class="container">
+      <a href="#" class="btn btn-success btn-sm">Add new user</a>
+    </div>
+  </div>
   <table class="table table-striped">
     <thead>
     <tr>
@@ -34,7 +41,16 @@
       <tr>
         <td>@user.Username</td>
         <td>@user.Email</td>
-        <td>@user.IsActive</td>
+        <td>
+          @if (user.IsActive)
+          {
+            <p class="text-success">Active</p>
+          }
+          else
+          {
+            <p class="text-danger">DeActive</p>
+          }
+        </td>
         <td>@user.RegisterDate</td>
         <td>
           <a href="#" class="btn btn-warning btn-sm">Edit</a>
@@ -47,11 +63,13 @@
 </div>
 <div class="container ">
   <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    @for (int i = 1; i <= Model.UserForAdminViewModel.PageCount; i++)
+    {
+      <li class="page-item" @((i == Model.UserForAdminViewModel.CurrentPage)?"active":"")>
+        <a class="page-link" href="/Admin/Users?PageId=@i">@i</a>
+      </li>
+
+    }
   </ul>
 </div>
 

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Project.Core.DTOs;
 using Project.Core.Services.Interfaces;
@@ -14,9 +15,13 @@ public class Index : PageModel
     }
 
     public UserForAdminViewModel UserForAdminViewModel { get; set; }
-    
-    public void OnGet()
+
+    public void OnGet(int pageId = 1, string filterUsername = "", string filterEmail = "")
     {
-        UserForAdminViewModel = _userService.GetUsers();
+        UserForAdminViewModel = _userService.GetUsers(pageId, filterUsername, filterEmail);
     }
+
+    
+
+
 }
