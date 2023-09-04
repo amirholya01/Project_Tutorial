@@ -1,3 +1,4 @@
+using Project.Core.DTOs;
 using Project.Core.Services.Interfaces;
 using Project.Datalayer.Context;
 using Project.Datalayer.Entities.User;
@@ -29,5 +30,23 @@ public class UserService : IUserService
         _context.Users.Add(user);
         _context.SaveChanges();
         return user.UserId;
+    }
+
+    public UserForAdminViewModel GetUsers(int pageId = 1, string filterEmail = "", string filterUsername = "")
+    {
+        IQueryable<User> result = _context.Users;
+        if (!string.IsNullOrEmpty(filterEmail))
+            result = result.Where(u => u.Email.Contains(filterEmail));
+        if (!string.IsNullOrEmpty(filterUsername))
+            result = result.Where(u => u.Username.Contains(filterUsername));
+
+        int take = 20;
+        int skip = (pageId - 1) * take;
+
+        UserForAdminViewModel list = new UserForAdminViewModel();
+        list.CurrentPage = pageId;
+        list.PageCount = result.Count() / take;
+        list.Users = result.OrderBy(u => u.RegisterDate).Skip(skip).Take(take).ToList();
+        return list;
     }
 }

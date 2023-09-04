@@ -1,5 +1,6 @@
 /* CSS for the header */
 /* CSS for the header */
+
 .header {
     background-color: #f1f1f1;
     padding: 10px;
@@ -44,6 +45,14 @@
 .footer-text {
     font-size: 14px;
 }
+
+.admin-panel .sidebar .drop-list li{
+    list-style-type: none;
+}
+.admin-panel .sidebar .drop-list li a{
+    text-decoration: none;
+}
+
 
 /* CSS for responsive design */
 @media screen and (max-width: 600px) {
